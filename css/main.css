@@ -1,0 +1,161 @@
+/* Root elements */
+
+:root {
+  --main-bg-color: #f4f4f4;
+  --header-bg-color: #35424a;
+  --border-color: #e8491d;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-size: 15px;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  background-color: var(--border-color);
+  color: var(--text-color);
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--main-bg-color);
+  color: #333;
+}
+
+/* Header */
+
+header {
+  background-color: var(--header-bg-color);
+  min-height: 70px;
+  border-bottom: 3px solid var(--border-color);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 30px;
+}
+
+header .logo {
+  color: var(--text-color);
+}
+
+header .highlight,
+header .current a {
+  color: var(--border-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #ccc;
+}
+
+/* Showcase */
+
+#showcase {
+  min-height: 400px;
+  background: url('../img/showcase.jpg') no-repeat 0 -400px;
+  color: var(--text-color);
+}
+
+#showcase .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 18px;
+}
+
+/* Newsletter */
+
+#newsletter {
+  background-color: var(--header-bg-color);
+}
+
+#newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#newsletter h2 {
+  color: var(--text-color);
+}
+
+#newsletter input[type='email'] {
+  width: 250px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+/* Boxes */
+
+#boxes .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#boxes .box {
+  width: 30%;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--border-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+}
