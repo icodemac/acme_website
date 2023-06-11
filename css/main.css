@@ -206,3 +206,15 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  header .container,
+  #newsletter .container,
+  #main .container {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
